@@ -60,6 +60,10 @@ Elements can be marked as required by adding the required parameter. Type string
 
 ### Test
 
+Testing with PHPUnit can be found under test folder
+
+#### Examples
+
 ```
 {
     "id": 25,
