@@ -29,6 +29,7 @@ Elements can be marked as required by adding the required parameter. Type string
 
 ### Schema
 
+```
 {
     "id": {
         "type": "int",
@@ -55,20 +56,25 @@ Elements can be marked as required by adding the required parameter. Type string
         "type":"email"
     }
 }
+```
 
 ### Test
 
+```
 {
     "id": 25,
     "description": "Blue car."
 }
+```
 
 isValid -> false, error: [name is required]
 
+```
 {
     "id": 21,
     "name": "Red car"
 }
+```
 
 isValid -> true, error: []
 
