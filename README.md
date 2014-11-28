@@ -12,7 +12,7 @@ $validate = new Validate();
 
 $validate->parse($schema);
 
-$result = $validate->isValid();
+$result = $validate->isValid($data);
 
 ## Data types supported
 
