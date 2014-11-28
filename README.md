@@ -30,6 +30,9 @@ php composer.phar install
 
 The schema is supplied in json format to the parse method. The isValid method is then called which returns a json response. The response will indicate if the data string is valid compared to the schema provided. If there are errors they will be in the response.
 
+```
+require_once 'vendor/autoload.php';
+
 use MobileXCo\Validate;
 
 $validate = new Validate();
@@ -37,6 +40,7 @@ $validate = new Validate();
 $validate->parse($schema);
 
 $result = $validate->isValid($data);
+```
 
 ## Data types supported
 
@@ -47,11 +51,13 @@ $result = $validate->isValid($data);
 
 ## Extra constraints
 
-Elements can be marked as required by adding the required parameter. Type string and int can have a min and max lengths.
+Elements can be marked as required by adding the required parameter. Type string and int can have a min and max length.
 
-## Examples
+## Testing
 
-### Schema
+Testing with PHPUnit can be found under test folder.
+
+## Schema Example
 
 ```
 {
@@ -82,11 +88,7 @@ Elements can be marked as required by adding the required parameter. Type string
 }
 ```
 
-### Test
-
-Testing with PHPUnit can be found under test folder
-
-#### Examples
+## Data Examples
 
 ```
 {
